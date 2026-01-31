@@ -1,3 +1,5 @@
+# Recent Projects Overview
+
 The following is part of a collection of personal projects I use and iterate on in my day-to-day as a Product Manager, with the goal of improving execution and decision making. 
 
 > **Scope note:** Some of these are less polished because they’re built to pressure-test agentic AI in practice and understand the limits of autonomous coding agents. The goal is MVP-quality output for architectural decisions, Eng/DS collaboration, and parallelizing certain workflows.
