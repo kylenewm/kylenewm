@@ -1,8 +1,8 @@
-# Recent Projects Overview
+# Projects
 
-The following is part of a collection of personal projects I use and iterate on in my day-to-day as a Product Manager, with the goal of improving execution and decision making. 
+AI tools I build and use as a Product Manager to improve execution and decision-making.
 
-> **Scope note:** Some of these are less polished because they’re built to pressure-test agentic AI in practice and understand the limits of autonomous coding agents. The goal is MVP-quality output for architectural decisions, Eng/DS collaboration, and parallelizing certain workflows.
+> The goal of this is tooling that helps me guide architecture decisions, engage in technical conversations with Eng/DS, and parallelize workflows.
 
 
 ## In progress
