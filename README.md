@@ -12,7 +12,7 @@ I am now using the system itself to build the following:
 
 **Real-Time Agent Observability Platform:** Monitoring infrastructure for concurrent autonomous agent runs. Building the tooling to monitor, trace, and intervene across all runs from a single view.
 
-**Agentic Deep Research and Evaluation:** Connecting research agents that find emerging patterns and failure modes directly into the evaluation pipeline, so what the system learns about quality automatically improves how it measures quality going forward.
+**Agentic Deep Research and Evaluation:** Connecting research agents that find emerging patterns and failure modes directly into the evaluation pipeline and core system, so new insights improve the system and how it is evaluated
 
 The end goal is an extensive system that mostly improves itself, where I handle the upfront planning and code review to ensure it scales, and the system handles the rest. This will fundamentally transform my day-to-day as a PM. By allowing me to rapidly prototype and build most custom-tooling with an extremely low level of effort, the majority of executional work will be either heavily augmented, automated, or parallelized whether it is R&D for my current team, a PRD, a slide deck, or any other medium to long horizon tasks where I can mostly autonomously get 80% of the way there. 
 
