@@ -1,36 +1,18 @@
 # Projects
 
-AI tools I build and use as a Product Manager to improve execution and decision-making.
+Note that most of these enable for me to learn about the failure points of models and agentic systems. These include the model taking shortcuts, optimism bias, context drift, bias from self-assessment, silent/cascading failures, lack of continual learning, and much more. 
 
-> The goal of this is tooling that helps me guide architecture decisions, engage in technical conversations with Eng/DS, and parallelize workflows.
+I have just built an an autonomous coding orchestration system to circumvent this. At a high level, it is a three-layer system that takes a high-level plan and autonomously ships it, handling task execution, multi-model adversarial code review, crash recovery, and session management across 4-5+ hour runs without human intervention.
 
+I am now using the system itself to build the folowing: 
 
-## In progress
+**Continual Learning Multi-Agent System:** Expand on the single-agent system to a multitude of coordinated agents that get learn over time. This system captures what works and what fails across runs and feeds those patterns back into future sessions automatically.
 
-### Adversarial testing suite
-Automated code review using agents across different tools (in simple terms: one model finds bugs in Claude Code output, a third model judges validity to avoid looping critiques, then Claude Code proposes fixes).
+**Real-Time Agent Observability Platform:** Monitoring infrastructure for concurrent autonomous agent runs. Building the tooling to monitor, trace, and intervene across all runs from a single view.
 
-Includes a planning option for net-new features. Earlier multi-model planning attempts lacked codebase context and web search, so this version is designed to run end-to-end with less manual intervention.
+**Agentic Deep Research and Evaluation:** Connecting research agents that find emerging patterns and failure modes directly into the evaluation pipeline, so what the system learns about quality automatically improves how it measures quality going forward.
 
-### Simulation gym
-Validates new system features by having multiple Claude Code agents execute tasks, with tests generated outside Claude Code to reduce biased self-evaluation.
-
-The point is to measure whether changes actually improve outcomes, rather than blindly adding features and assuming they help.
-
-### Autonomous workflows with HITL
-
-Parallelizes work across agents where they can attempt a task a series of times before requiring intervention.
-
-This tooling is useful for iterative and subjective tasks (for example: slide decks) where models need several passes.
-
-<details>
-<summary><b>Aside from technical complexity, the reason the above are somewhat unique is they're hard to make as an enterprise product. </b></summary>
-
-- **Adversarial testing** requires multiple top IDE tools in the loop. A vendor cannot realistically ship a feature that assumes you are not using their own product.
-- **Simulation gym** exists because I’ve seen models construct tests in ways that bias toward the newer feature winning, even when the feature is worse. Using an external runner helps validate assumptions instead of trusting a single tool’s self-evaluation.
-- **Autonomous workflows with HITL** are often not worth it for typical users from a compute and UX standpoint. Most people do not want a slide deck to take 20 minutes to generate, and most slide deck users are not technical enough for tooling that requires this level of setup. For me, it’s still worth it because it lets me parallelize work further.
-
-</details>
+The end goal of this work is to amplify my producitvity while integrating cutting edge reserach into rapidly improving system, where they system will eventually be most improving itself besides the upfront planning and the code review needed to make sure it scales properly. I'll be posting more on my substack over the coming days as this continues to scale. 
 
 ## Projects
 
@@ -39,15 +21,6 @@ This tooling is useful for iterative and subjective tasks (for example: slide de
 **Goal:** Expand Claude Code's capabilities to enable building other productivity tools
 
 A set of features on top of Claude Code that addresses its rough edges. Claude Code is powerful but inconsistent. It rushes through tasks, over-engineers simple requests, loses context mid-session, and sometimes claims completion on broken code.
-
-Council adds:
-- Mode injection (switching sgent conext between rapid prototyping,research, and production modes)
-- Build frameworks with quality gates
-- Path protection for sensitive files
-- Multi-agent orchestration with circuit breakers to catch stuck loops
-- Multi-model planning where different models critique each other’s approaches
-
-Next step: add a reproducible workflow leveraging adversarial testing outside of Claude Code to mitigate blind spots during planning and reduce test overfitting. Note that some of the above has limitations in complex codebases or longer time horizons, so I’m seeing diminishing returns from continued investment in certain features.
 
 ---
 
