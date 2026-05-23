@@ -1,8 +1,8 @@
 # Projects
 
-I recently built an autonomous coding orchestration system to circumvent key failures with LLMs and agentic systems (in a private repo). At a high level, it is a three-layer system that takes a high-level plan and autonomously ships it, handling task execution, multi-model adversarial code review, among other items. Note that these projects are just POCs
+I recently built an autonomous coding orchestration system to circumvent key failures with LLMs and agentic systems (in a private repo). At a high level, it is a three-layer system that takes a high-level plan and autonomously ships it, handling task execution, multi-model adversarial code review, among other items.
 
-These projects towards the bottom were how I learned where models and agentic systems actually break: taking shortcuts, optimism bias, context drift, silent failures, and lack of continual learning, among others. Here is a very high-level diagram displaying the core loop of it. 
+These personal projects towards the bottom were how I learned where models and agentic systems actually break: taking shortcuts, optimism bias, context drift, silent failures, and lack of continual learning, among others. Here is a very high-level diagram displaying the core loop of it. 
 
 <img width="1583" height="803" alt="updated_image" src="https://github.com/user-attachments/assets/342e52f2-2749-4f50-9e72-3af37b0b91df" />
 
