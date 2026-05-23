@@ -1,20 +1,10 @@
 # Projects
 
-I recently built an autonomous coding orchestration system to circumvent key failures with LLMs and agentic systems (in a private repo). At a high level, it is a three-layer system that takes a high-level plan and autonomously ships it, handling task execution, multi-model adversarial code review, crash recovery, and session management across 4-5+ hour runs without human intervention. 
+I recently built an autonomous coding orchestration system to circumvent key failures with LLMs and agentic systems (in a private repo). At a high level, it is a three-layer system that takes a high-level plan and autonomously ships it, handling task execution, multi-model adversarial code review, among other items. Note that these projects are just POCs
 
 These projects towards the bottom were how I learned where models and agentic systems actually break: taking shortcuts, optimism bias, context drift, silent failures, and lack of continual learning, among others. Here is a very high-level diagram displaying the core loop of it. 
 
 <img width="1583" height="803" alt="updated_image" src="https://github.com/user-attachments/assets/342e52f2-2749-4f50-9e72-3af37b0b91df" />
-
-I am now using the system itself to build the following:
-
-**Continual Learning Multi-Agent System:** Expand the single-agent system to a multitude of coordinated agents that learn over time. The system captures what works and what fails across runs and feeds those patterns back into future sessions automatically.
-
-**Real-Time Agent Observability Platform:** Monitoring infrastructure for concurrent autonomous agent runs. Building the tooling to monitor, trace, and intervene across all runs from a single view.
-
-**Agentic Deep Research and Evaluation:** Connecting research agents that find emerging patterns and failure modes directly into the evaluation pipeline and core system, so new insights improve the system and how it is evaluated
-
-The end goal is an extensive system that mostly improves itself, where I handle the upfront planning and code review to ensure it scales, and the system handles the rest. This will fundamentally transform my day-to-day as a PM. By allowing me to rapidly prototype and build most custom-tooling with an extremely low level of effort, the majority of executional work will be either heavily augmented, automated, or parallelized whether it is R&D for my current team, a PRD, a slide deck, or any other medium to long horizon tasks where I can mostly autonomously get 80% of the way there. 
 
 ## Projects
 
