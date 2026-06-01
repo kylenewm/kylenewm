@@ -1,6 +1,8 @@
 # Projects
 
-I recently built an autonomous coding orchestration system to circumvent key failures with LLMs and agentic systems (in a private repo). At a high level, it is a three-layer system that takes a high-level plan and autonomously ships it, handling task execution, multi-model adversarial code review, among other items.
+Note that these projects are just POC-level code to explore the capabalities and limitations of agentics system and modern AI tooling. 
+
+The most recent was I recently built an autonomous coding orchestration system to circumvent key failures with LLMs and agentic systems (in a private repo soon to be published). At a high level, it is a three-layer system that takes a high-level plan and autonomously ships it, handling task execution, multi-model adversarial code review, among other items.
 
 These personal projects towards the bottom were how I learned where models and agentic systems actually break: taking shortcuts, optimism bias, context drift, silent failures, and lack of continual learning, among others. Here is a very high-level diagram displaying the core loop of it. 
 
@@ -9,10 +11,8 @@ These personal projects towards the bottom were how I learned where models and a
 ## Projects
 
 ### [Claude Code Build-Kit](https://github.com/kylenewm/council-v3)
-**Status:** Evolved into the Autonomous Coding Orchestration System above
+**Status:** Heavily evolved into the Autonomous Coding Orchestration System above
 **Goal:** Expand Claude Code's capabilities to enable building other productivity tools
-
-A set of features on top of Claude Code that addresses its rough edges. Claude Code is powerful but inconsistent. It rushes through tasks, over-engineers simple requests, loses context mid-session, and sometimes claims completion on broken code.
 
 ---
 
